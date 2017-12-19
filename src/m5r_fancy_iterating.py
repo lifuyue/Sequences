@@ -12,11 +12,11 @@ is different from:
   -- LOOKING only at items AT even-numbered indices.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Fuyue Li.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # ----------------------------------------------------------------------
-# TODO: 2. READ the program below and RUN it.
+# DONE: 2. READ the program below and RUN it.
 #
 #   When you have read it, asking questions as needed,
 #   and you feel that you understand:
@@ -90,6 +90,13 @@ def sum_string_lengths(sequence, m, n):
         total = total + len(sequence[m + n - k])
 
     return total
+
+    # Here is a second alternative:
+    # total = 0
+    # for k in range(m, n + 1):
+    #     total = total + len(sequence[k])
+    #
+    # return total
 
 
 def sum_even_integers(sequence):
